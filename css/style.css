@@ -1,0 +1,41 @@
+/*    */
+li  {
+    color: red;
+}
+p {
+    color: black;
+}
+a {
+    color: olive;
+    display: inline;
+}
+h1{
+    font-family: 'Sixtyfour', sans-serif; 
+}
+#footer {
+    color: palevioletred;
+    text-align: center;
+    font-size: 76px;
+}
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+.small-p {
+    line-height: 2;
+    border: 2px solid green;
+    margin: 20px;
+    padding: 23px;
+}
+.big-p {
+    letter-spacing: 5px;
+    border: 2px solid green;
+    padding: 23px;
+}
+html {
+    background-color: rgb(221, 183, 221);
+}
+li:hover{
+    color : red
+}
