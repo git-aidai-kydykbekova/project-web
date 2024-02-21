@@ -1,6 +1,33 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <body>
+
+    <h1 id="header">Welcome</h1>
+
+
+    <button id="nameButton">Click to Enter Name</button>
+</head>
+<script>
+    document.getElementById("nameButton").addEventListener("click", function() {
+
+        var name = prompt("Please enter your name:");
+
+        document.getElementById("header").textContent = "Welcome " + name;
+    });
+</script>
+
+    </body>
+
+</html>
+
     <head>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Ala-Too Internetional University</title>
@@ -40,4 +67,5 @@
             <p> Visit to official <a href="http://alatoo.edu.kg"> Webpage of Ala-Too International University </a>  to learn more.</p>
     </body>
     <script src="js/script.js" defer></script>
+    
 </html>

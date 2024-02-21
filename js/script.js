@@ -36,3 +36,5 @@ function changeFoto(event) {
     }
 }
 imgElement.onclick = changeFoto;
+
+
