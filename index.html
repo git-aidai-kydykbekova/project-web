@@ -1,71 +1,42 @@
-<!DOCTYPE html>
-
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <body>
-
-    <h1 id="header">Welcome</h1>
-
-
-    <button id="nameButton">Click to Enter Name</button>
-</head>
-<script>
-    document.getElementById("nameButton").addEventListener("click", function() {
-
-        var name = prompt("Please enter your name:");
-
-        document.getElementById("header").textContent = "Welcome " + name;
-    });
-</script>
-
-    </body>
-
-</html>
-
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Ala-Too Internetional University</title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1>Ala-Too Internetional University - Gateway to the world</h1>
-        <p class = "small-p">Ala-Too International University (AIU) was established in 1996 and it is located in Bishkek, the Kyrgyz
-            Republic. Our university consists of five blocks, where there are classrooms and laboratories
-            equipped with the Internet and modern interactive whiteboards.        <img src="img/png-transparent-ala-too-international-university-almaty-management-university-kochi-university-of-technology-student-emblem-label-text.png" alt="AIU logo" />
-            Our "Campus" is an educational
-            center with a library, a conference hall, 3 stadiums, 1 tennis cord, 1 gym, 6 computer classes, 1
-            Internet club, 1 research center, 2 cantinas, 1 medical center.
-        </p>
-        <p id = "footer"> HELLO I AM Aidai</p>
-        
-
-        <p>There are 4 faculties, 3 institutes and 16 departments in AIU. The faculties are:</p>
-        
-            <ul>
-                <li>Faculty of Engineering and Informatics</li>
-                <li>Faculty of Social Sciences</li>
-                <li>Faculty of Economics and Administrative Sciences</li>
-                <li>Faculty of Medicine</li>
-            </ul>
-            <p class = "big-p">The staffing of the AIU is composed of highly qualified, experienced, young, active teachers from
-            Kyrgyzstan, Turkey, USA, China, India and other countries. Undergraduate, graduate and
-            postgraduate programs are conducted in a multicultural and democratic atmosphere of mutual
-            respect. Our university has bilateral agreements with some universities in Europe, China, America,
-            Turkey and Cyprus.<p>
-            
-            <p> Visit to official <a href="http://alatoo.edu.kg"> Webpage of Ala-Too International University </a>  to learn more.</p>
-    </body>
-    <script src="js/script.js" defer></script>
-    
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width"> 
+        <title>Ala-Too Internetional University</title> 
+        <style> 
+            ul{ 
+                font-size: 1.2em; 
+            } 
+        </style> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css"> 
+    </head> 
+    <body> 
+        <h2 id="facullties"></h2> 
+        <a href="http://127.0.0.1:5501/faculties.html">-Facullties</a> 
+        <h2 id="pictures"></h2> 
+        <a href="http://127.0.0.1:5501/pictures.html">-Pictures</a> 
+        <h2 id="contacts"></h2> 
+        <a href="http://127.0.0.1:5501/contacts.html">-Contacts</a> 
+        <h1>Ala-Too Internetional University - Gateway to the world</h1> 
+        <img src="img\AIU.jpeg" alt="AIU logo" /> 
+        <p>Ala-Too International University (AIU) was established in 1996 and it is located in Bishkek, the Kyrgyz 
+            Republic. Our university consists of five blocks, where there are classrooms and laboratories 
+            equipped with the Internet and modern interactive whiteboards. Our "Campus" is an educational 
+            center with a library, a conference hall, 3 stadiums, 1 tennis cord, 1 gym, 6 computer classes, 1 
+            Internet club, 1 research center, 2 cantinas, 1 medical center. 
+        </p>       
+        <p>The staffing of the AIU is composed of highly qualified, experienced, young, active teachers from 
+            Kyrgyzstan, Turkey, USA, China, India and other countries. Undergraduate, graduate and 
+            postgraduate programs are conducted in a multicultural and democratic atmosphere of mutual 
+            respect. Our university has bilateral agreements with some universities in Europe, China, America, 
+            Turkey and Cyprus.</p> 
+        <p><input type="text" id="name" name="name"> 
+        <input type="button" onclick="changeHeader()" value="submit"></p> 
+        <p>Visit to official <a href="http://alatoo.edu.kg/">Webpage of Alatoo International University</a> to learn more</p> 
+    </body> 
+    <script src="js/script.js" ></script> 
 </html>
